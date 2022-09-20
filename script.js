@@ -2,8 +2,6 @@ const inputText = document.querySelector(".input-texto");
 const mensaje   = document.querySelector(".mensaje");
 
 function btnEncriptar(){
-    alert(inputText.value);
-    debugger;
     document.getElementById('rightContent2').hidden = false;
     let matrizCodigo = [["e","enter"],["i","imes"],["a","ai"],["o","ober"], ["u","ufat"]];
 
@@ -19,9 +17,6 @@ function btnEncriptar(){
 }
 
 function btnDesEncriptar(){
-    alert(inputText.value);
-
-
     let matrizCodigo = [["enter","e"],["imes","i"],["ai","a"],["ober","o"], ["ufat","u"]];
 
     var valor = inputText.value.toLowerCase();
