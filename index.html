@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="divLogo">
+        <img src="images/Logo.svg" id="logoImg">
+    </div>
+    <div >
+        <textarea id="textDiv" class="input-texto" placeholder="Ingrese el texto aqui" rows="10" cols="50"></textarea>
+    </div>
+    <div id="leftContent">
+        <input type="button" id="encriptarBtn" value="Encriptar" onClick="btnEncriptar();">
+        <input type="button" id="desencriptarBtn" value="Desencriptar" onClick="btnDesEncriptar();">
+    </div>
+
+
+    <div id="rightContent">
+        <div id="notFoundDiv">
+            <label id="notFoundText">Ningún mensaje fue encontrado</label>
+            <label id="notFoundText2">Ingresa el texto que desees encriptar o desencriptar.</label>
+
+        </div>
+
+    </div>
+    <img src="images/Muñeco.svg" id="munecoImg">
+
+    <div id="rightContent2" hidden>
+        <textarea id="resultText" class="mensaje" cols="18" rows="8"></textarea>
+        <input type="button"  id="copyButton" value="Copiar" onClick="copyToClickBoard();">
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
